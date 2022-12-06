@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <script defer src="./js/navBar.js"></script>
+    <script defer src="./js/accordion.js"></script>
+    <script defer src="./js/form_adopcion.js"></script>
+
+    <title>A4P - Adopción!</title>
+</head>
+
+<body class="body-pages">
+    <header>
+        <nav class="nav-bar-section">
+            <button class="nav-btn open-btn">
+                <img class="img-btn-nav" src="./img/menu_hamb_open.png" alt="">
+            </button>
+            
+            <div class="nav nav-black">
+                <button class="nav-btn close-btn">
+                        <img class="img-btn-nav" src="./img/menu_hamb_close.png" alt="">
+                </button>
+
+                <ul class="list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./adopcion_info.html">Info Adopciones</a></li>
+                    <li><a href="./donacion_info.html">Info Donaciones</a></li>
+                    <li><a href="./voluntarios_info.html">Info Voluntarios</a></li>
+                    <li><a href="./refugio_info.html">Info Refugio</a></li>
+                    <li><a href="./adopcion_cards.html">Adoptá!</a></li>
+                </ul>
+                <img src="img/logo3.png" alt="Logo" class="logo">
+            </div>
+        </nav>
+        
+        <section class="logo info">
+            <img src="./img/logo3.png" alt="">
+            <div class="text-header info">
+                <h1>Gracias por elegir Adoptar!</h1>
+                <p>¡Nos pone muy felices saber que querés un nuevo amigo!</p>
+            </div>
+        </section>
+    </header>
+    
+    <main class="main-pages container">
+        <div class="general-accordion">
+            <button class="accordion paragraph">¿Cómo empieza todo?</button>
+            <div class="panel paragraph">
+                <p>El círculo que se inicia con el rescate y continúa con la recuperación, culmina con la adopción. En el refugio ingresan alrededor de 100 animales en malas condiciones, mes a mes, pero gracias a que una cantidad similar se van en adopción debido a la excelente tarea desarrollada por el equipo de adopciones es que podemos seguir haciendo lo que hacemos. Los animales que llegan a la fundación reciben atención veterinaria completa, incluyendo esterilización, vacunación, desparacitación, identificación con microchip y cualquier tratamiento necesario para garantizar su bienestar hasta que logremos encontrarles un hogar que los cuide de por vida. </p>
+            </div>
+
+            <button class="accordion paragraph">¿Qué tenes que saber para llevar a cabo una adopción?</button>
+            <div class="panel paragraph">
+                <p>Nos encantaría poder entregar un peludito a cada persona que desee adoptar, pero la gran responsabilidad que sentimos con ellos nos obliga a tener unos requisitos mínimos que nos permitan tener cierta seguridad en que los hogares donde llegarán serán los definitivos. Conocé los requisitos en la próxima pregunta desplegable.</p>
+            </div>
+
+            <button class="accordion paragraph">¿Qué requisitos debo cumplir para adoptar?</button>
+            <div class="panel paragraph">
+                <p>La persona responsable debe:</p>
+                <ul>
+                    <li>Ser mayor de 21 años</li>
+                    <li>Completar el formulario de Pre-Adopción</li>
+                    <li>Esperar la verificación de los datos por parte de nosotros (aproximadamente tardamos 3 días en revisar las solicitudes)</li>
+                    <li>Cordinar una visita domiciliaria para que conozcamos donde va a vivir nuestro amigo</li>
+                    <li>Seguir en constante comunicación con nosotros, para que podamos saber como está nuestro Amigo de 4 Patas</li>
+                    <li>Cumplir los compromisos y obligaciones que figuran en el contrato de adopción</li>
+                </ul>
+
+                <p>Además, siempre que elijas adoptar, te recomendamos:</p>
+                <ul>
+                    <li>Que tengas el espacio para que vos y él/ella este bien</li>
+                    <li>Que tengas la estabilidad ecónomica necesaria para poder cumplir con las necesidades y los mimos que tu amigo requiere</li>
+                </ul>
+                <p>Y por ultimo... Si vives en una zona de sobrepoblación canina o felina, adoptá vos mismo a uno de la calle para que sea tu amigo, así juntos podemos salvar más vidas!!</p>
+            </div>
+
+            <button class="accordion paragraph">¿Cómo puedo ver los animales disponibles para adopción?</button>
+            <div class="panel paragraph">
+                <p>Podes buscar a tu proximo Amigo de 4 patas y ver toda su información en la siguiente <a href="./adopcion_cards.html">sección</a>.</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="form_adoption" class="container">
+        <h2 class="title-pages">¿Cómo hago para adoptar?</h2>
+        <div class="paragraph-info paragraph-pages">
+            <p class="paragraph">Completa el siguiente formulario y uno de nosotros se va a contactar con vos!</p>
+        </div>
+            
+        <form id="form_pages" class="form-general" action="">
+            <fieldset class="form-general">
+                <legend>Datos Personales</legend>
+                <div class="form-group" id="group_adoption_name">
+                    <label for="adoption_name" class="form-label">Nombre</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="adoption_name" id="adoption_name">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El nombre solo puede contener letras. Mínimo: 2 caracteres</p>
+                </div>
+
+                <div class="form-group" id="group_adoption_surname">
+                    <label for="adoption_surname" class="form-label">Apellido</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="adoption_surname" id="adoption_surname">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El apellido solo puede contener letras. Mínimo 2 caracteres</p>
+                </div>
+
+                <div class="form-group" id="group_adoption_dni">
+                    <label for="adoption_dni" class="form-label">DNI</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="adoption_dni" id="adoption_dni">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El DNI solo puede contener números. Mínimo: 7 / Máximo: 8</p>
+                </div>
+
+                <div class="form-group" id="group_adoption_birthdate">
+                    <label for="adoption_birthdate" class="form-label">Fecha de Nacimiento</label>
+                    <div class="form-group-input">
+                        <input type="date" class="form-input-pages" name="adoption_birthdate" id="adoption_birthdate">
+                    </div>
+                    <p class="form-input-error">Ingrese una fecha valida. Recuerde que para adoptar debe ser mayor de 21 años</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Contacto</legend>
+                <div class="form-group" id="group_adoption_email">
+                    <label for="adoption_email" class="form-label">E-mail</label>
+                    <div class="form-group-input">
+                        <input type="email" class="form-input-pages" name="adoption_email" id="adoption_email">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">Por favor ingrese un formato de correo válido (por ejemplo: correo@correo.com)</p>
+                </div>
+
+                <div class="form-group" id="group_adoption_phone">
+                    <label for="adoption_phone" class="form-label">Teléfono</label>
+                    <div class="form-group-input">
+                        <input type="tel" class="form-input-pages" name="adoption_phone" id="adoption_phone">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El Teléfono solo puede contener números.Minimo: 10 / Máximo: 20</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Domicilio</legend>
+                <div class="form-group" id="group_adoption_street">
+                    <label for="adoption_street" class="form-label">Calle</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="adoption_street" id="adoption_street">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">La Calle solo puede contener letras, numeros, puntos y guiones. Mínimo: 2 / Máximo: 30</p>
+                </div>
+
+                <div class="form-group" id="group_adoption_st_number">
+                    <label for="adoption_st_number" class="form-label">Numero</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="adoption_st_number" id="adoption_st_number">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">Ingrese números solamente</p>
+                </div>
+
+                <div class="form-group" id="group_adoption_departament">
+                    <label for="adoption_departament" class="form-label">Departamento</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="adoption_departament" id="adoption_departament">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El Departamento solo puede contener letras y números. Mínimo: 1 / Máximo: 3</p>
+                </div>
+
+                <div class="form-group" id="group_adoption_location">
+                    <label for="adoption_location" class="form-label">Localidad</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="adoption_location" id="adoption_location">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">La Localidad solo puede contener letras y numeros</p>
+                </div>
+
+                <div class="form-group" id="group_adoption_province">
+                    <label for="adoption_province" class="form-label">Provincia</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="adoption_province" id="adoption_province">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">La Provincia solo puede contener letras</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Datos de la mascota</legend>
+                <div class="form-group form-group-input-radio" id="group_adoption_pet">
+                    <div class="form-group-input">
+                        <label for="dog" class="form-label form-label-radio"><input type="radio" class="form-input-pages adoption-pet" name="adoption_pet" value="dog" checked>Perro</label>
+                        <br>
+                        <label for="cat" class="form-label form-label-radio"><input type="radio" class="form-input-pages adoption-pet" name="adoption_pet" value="cat">Gato</label>
+                    </div>
+                </div>
+
+                <div class="form-group" id="group_adoption_name_pet">
+                    <label for="adoption_name_pet" class="form-label">Nombre</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="adoption_name_pet" id="adoption_name_pet">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El nombre solo puede contener letras. Mínimo: 2 caracteres</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Si querés dejarnos más información...</legend>
+                <div class="form-group group-msg" id="group_adoption_msg">
+                    <div class="form-group-input">
+                        <textarea class="form-pages-textarea" name="adoption_msg" id="adoption_msg" cols="30" rows="3"></textarea>
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El mensaje solo puede contener letras, numeros, puntos, guiones y guion bajo. Mínimo: 15 caracteres</p>
+                </div>
+            </fieldset>
+
+            <div class="form-error-msg" id="form_error_msg">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.</p>
+            </div>
+            
+            <div class="form-group-index index-btn">
+                <button type="submit" class="btn-send button-style">Enviar</button>
+                <p class="form-ok-msg" id="form_ok_msg">Gracias por contactarte con nosotros!</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+    <div class="svg-bottom" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 140" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: #735B74FF;"></path></svg></div>
+    
+    <footer>
+        <div class="social-media">
+            <h2 class="title">Social-Media</h2>
+            <p class="paragraph">Realmente no sabemos nada sobre el amor si no amamos a los animales. Vení a ser parte de nuestro mundo de cerca...</p>
+            <div class="items-social">
+                <a href="#"><img src="./img/social_whatsapp.png" alt=""></a>
+                <a href="#"><img src="./img/social_twitter.png" alt=""></a>
+                <a href="#"><img src="./img/social_facebook.png" alt=""></a>
+                <a href="#"><img src="./img/social_youtube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="https://www.flaticon.com/free-icons/dog" title="dog icons">// Dog, Marketing & Mammal icons created by Freepik - Flaticon </a>
+            <a href="https://www.flaticon.com/free-icons/pets" title="pets icons">// Pets icons created by photo3idea_studio - Flaticon //</a>
+            <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons"> Social Media icons created by Aldo Cervantes - Flaticon //</a>
+            <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons"> Hamburger icons created by feen - Flaticon //</a>
+        </div>
+    </footer>
+</body>
+
+</html>

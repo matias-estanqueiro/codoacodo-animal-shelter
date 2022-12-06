@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <script defer src="./js/accordion.js"></script>
+    <script defer src="./js/navBar.js"></script>
+    <script defer src="./js/form_donacion.js"></script>
+    <title>A4P - Donaciones</title>
+</head>
+
+<body class="body-pages">
+    <header>
+        <nav class="nav-bar-section">
+            <button class="nav-btn open-btn">
+                <img class="img-btn-nav" src="./img/menu_hamb_open.png" alt="">
+            </button>
+
+            <div class="nav nav-black">
+                <button class="nav-btn close-btn">
+                    <img class="img-btn-nav" src="./img/menu_hamb_close.png" alt="">
+                </button>
+
+                <ul class="list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./adopcion_info.html">Info Adopciones</a></li>
+                    <li><a href="./donacion_info.html">Info Donaciones</a></li>
+                    <li><a href="./voluntarios_info.html">Info Voluntarios</a></li>
+                    <li><a href="./refugio_info.html">Info Refugio</a></li>
+                    <li><a href="./adopcion_cards.html">Adoptá!</a></li>
+                </ul>
+                <img src="img/logo3.png" alt="Logo" class="logo">
+            </div>
+        </nav>
+
+        <section class="logo info">
+            <img src="./img/logo3.png" alt="">
+            <div class="text-header">
+                <h1>Gracias por elegir ayudarnos!</h1>
+                <p>Nuestros animales van a estar super contentos!</p>
+            </div>
+        </section>
+    </header>
+
+    <main class="main-pages container">
+        <div class="general-accordion">
+            <button class="accordion paragraph">¿Cómo puedo donar?</button>
+            <div class="panel paragraph">
+                <p>Somos una organización sin fines de lucro por lo que cualquier tipo de ayuda, material o económica,
+                    es muy útil para poder ayudar a nuestros rescatados.</p>
+            </div>
+
+            <button class="accordion paragraph">¿Qué puedo donar?</button>
+            <div class="panel paragraph">
+                <p>Nuestro mayor reto a la hora de recibir un animal que requiere atención veterinaria es contar con los fondos para llevar a cabo sus tratamientos, por lo tanto las donaciones monetarias son muy necesarias. Por ello hemos habilitado distintos medios de transferencia para quienes esten interesados en colaborar.<br>Además, también requerimos de ciertos insumos materiales para poder realizar el rescate, rehabilitación y reincorporación de los animales por lo que contamos con puntos de colecta donde la gente puede acercarse a dejar su donación.</p>
+            </div>
+
+            <button class="accordion paragraph">¿Cuáles son los insumos que más necesita el refugio?</button>
+            <div class="panel paragraph">
+                <p>Nuestros animalitos necesitan ciertos insumos como: medicinas, alimento, mantitas, juguetes, etc.<br>Además, el mantenimiento de sus respectivas camas y sectores requiere de limpieza por lo que los productos para ello como escobas, desinfectantes, etc también son necesarios.</p>
+            </div>
+        </div>
+
+    </main>
+    
+    <section class="container" id="form_donation">
+        <h2 class="title-pages">¿Cómo puedo realizar una donación?</h2>
+        <div class="paragraph-info paragraph-pages">
+            <p class="paragraph">Completa el siguiente formulario con tus datos para realizar una donación monetaria y uno de nosotros se va a contactar con vos! Todo el refugio agracede tu colaboración!</p>
+        </div>
+        
+        <form action="" class="form-general" id="form_pages">
+            <fieldset class="form-general">
+                <legend>Datos Personales</legend>
+                <div class="form-group" id="group_donation_name">
+                    <label for="donation_name" class="form-label">Nombre</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="donation_name" id="donation_name">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El nombre solo puede contener letras. Mínimo: 2 caracteres</p>
+                </div>
+
+                <div class="form-group" id="group_donation_surname">
+                    <label for="donation_surname" class="form-label">Apellido</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="donation_surname" id="donation_surname">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El Apellido solo puede contener letras. Mínimo 2 caracteres</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Contacto</legend>
+                <div class="form-group" id="group_donation_email">
+                    <label for="donation_email" class="form-label">E-mail</label>
+                    <div class="form-group-input">
+                        <input type="mail" class="form-input-pages" name="donation_email" id="donation_email">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">Por favor ingrese un formato de correo válido (por ejemplo: correo@correo.com)</p>
+                </div>
+
+                <div class="form-group" id="group_donation_phone">
+                    <label for="donation_phone" class="form-label">Telefono</label>
+                    <div class="form-group-input">
+                        <input type="tel" class="form-input-pages" name="donation_phone" id="donation_phone">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El Teléfono solo puede contener números. Minimo: 10 / Máximo: 20</p>
+                </div>
+
+                <div class="form-group" id="group_donation_address">
+                    <label for="donation_address" class="form-label">Dirección</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="donation_address" id="donation_address">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">La Dirección solo puede contener letras y números. Mínimo: 10 / Máximo: 50</p>
+                </div>
+
+                <div class="form-group" id="group_donation_location">
+                    <label for="donation_location" class="form-label">Localidad</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="donation_location" id="donation_location">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">La Localidad solo puede contener letras y números. Mínimo: 2 / Máximo: 20</p>
+                </div>
+
+                <div class="form-group" id="group_donation_province">
+                    <label for="donation_province" class="form-label">Provincia</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="donation_province" id="donation_province">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">La Provincia solo puede contener letras</p>
+                </div>
+
+                <div class="form-group" id="group_donation_postal_code">
+                    <label for="donation_postal_code" class="form-label">Código Postal</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="donation_postal_code" id="donation_postal_code">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El Código Postal solo puede contener números. Mínimo: 4 / Máximo: 8</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Donación</legend>
+                <div class="form-group form-group-input-radio" id="group_donation_cash">
+                    <div class="form-group-input">
+                        <label for="don_25" class="form-label form-label-radio"><input type="radio" class="form-input-pages donation-cash" name="donation_cash" value="25">$ 25</label>
+                        <label for="don_50" class="form-label form-label-radio"><input type="radio" class="form-input-pages donation-cash" name="donation_cash" value="50">$ 50</label>
+                        <label for="don_100" class="form-label form-label-radio"><input type="radio" class="form-input-pages donation-cash" name="donation_cash" value="100">$ 100</label>
+                        <label for="don_200" class="form-label form-label-radio"><input type="radio" class="form-input-pages donation-cash" name="donation_cash" value="200" checked>$ 200</label>
+                    </div>
+                </div>
+
+                <div class="form-group form-group-input-radio" id="group_donation_cash">
+                    <div class="form-group-input">
+                        <label for="don_400" class="form-label form-label-radio"><input type="radio" class="form-input-pages donation-cash" name="donation_cash" value="400">$ 400</label>
+                        <label for="don_800" class="form-label form-label-radio"><input type="radio" class="form-input-pages donation-cash" name="donation_cash" value="800">$ 800</label>
+                        <label for="don_1600" class="form-label form-label-radio"><input type="radio" class="form-input-pages donation-cash" name="donation_cash" value="1600">$ 1600</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Datos Tarjeta</legend>
+                <div class="form-group" id="group_donation_card_name">
+                    <label for="donation_card_name" class="form-label">Nombre (igual que en el plástico)</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="donation_card_name" id="donation_card_name">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El nombre solo puede contener letras. Mínimo: 2 caracteres</p>
+                </div>
+
+                <div class="form-group" id="group_donation_card_number">
+                    <label for="donation_card_number" class="form-label">Número Tarjeta</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="donation_card_number" id="donation_card_number">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">Ingrese números solamente. Mínimo: 16 / Máximo: 18</p>
+                </div>
+
+                <div class="form-group" id="group_donation_card_expiration">
+                    <label for="donation_card_expiration" class="form-label">Fecha de Vencimiento</label>
+                    <div class="form-group-input">
+                        <input type="date" class="form-input-pages" name="donation_card_expiration" id="donation_card_expiration">
+                    </div>
+                    <p class="form-input-error">Ingrese una fecha valida.</p>
+                </div>
+
+                <div class="form-group" id="group_donation_card_cvc">
+                    <label for="donation_card_cvc" class="form-label">Código de Seguridad</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="donation_card_cvc" id="donation_card_cvc">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El Código de Seguridad solo puede contener números. 3 caracteres</p>
+                </div>
+            </fieldset>
+
+            <div class="form-error-msg" id="form_error_msg">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.</p>
+            </div>
+            
+            <div class="form-group-index index-btn">
+                <button type="submit" class="btn-send button-style">Enviar</button>
+                <p class="form-ok-msg" id="form_ok_msg">Gracias por contactarte con nosotros!</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+    <div class="svg-bottom" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 140"
+            preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z"
+                style="stroke: none; fill: #735B74FF;"></path>
+        </svg></div>
+
+    <footer>
+        <div class="social-media">
+            <h2 class="title">Social-Media</h2>
+            <p class="paragraph">Realmente no sabemos nada sobre el amor si no amamos a los animales. Vení a ser parte
+                de nuestro mundo de cerca...</p>
+            <div class="items-social">
+                <a href="#"><img src="./img/social_whatsapp.png" alt=""></a>
+                <a href="#"><img src="./img/social_twitter.png" alt=""></a>
+                <a href="#"><img src="./img/social_facebook.png" alt=""></a>
+                <a href="#"><img src="./img/social_youtube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="https://www.flaticon.com/free-icons/dog" title="dog icons">// Dog, Marketing & Mammal icons created
+                by Freepik - Flaticon </a>
+            <a href="https://www.flaticon.com/free-icons/pets" title="pets icons">// Pets icons created by
+                photo3idea_studio - Flaticon //</a>
+            <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons"> Social Media icons created by
+                Aldo Cervantes - Flaticon //</a>
+            <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons"> Hamburger icons created by
+                feen - Flaticon //</a>
+        </div>
+    </footer>
+</body>
+
+</html>

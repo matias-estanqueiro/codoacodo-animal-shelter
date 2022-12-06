@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet"> 
+    <script defer src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <script defer src="./js/accordion.js"></script>
+    <script defer src="./js/navBar.js"></script>
+    <script defer src="./js/form_voluntarios.js"></script>
+    <title>A4P - Voluntarios</title>
+</head>
+
+<body class="body-pages">
+    <header>
+        <nav class="nav-bar-section">
+            <button class="nav-btn open-btn">
+                <img class="img-btn-nav" src="./img/menu_hamb_open.png" alt="">
+            </button>
+            
+            <div class="nav nav-black">
+                <button class="nav-btn close-btn">
+                        <img class="img-btn-nav" src="./img/menu_hamb_close.png" alt="">
+                </button>
+
+                <ul class="list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./adopcion_info.html">Info Adopciones</a></li>
+                    <li><a href="./donacion_info.html">Info Donaciones</a></li>
+                    <li><a href="./voluntarios_info.html">Info Voluntarios</a></li>
+                    <li><a href="./refugio_info.html">Info Refugio</a></li>
+                    <li><a href="./adopcion_cards.html">Adoptá!</a></li>
+                </ul>
+                <img src="img/logo3.png" alt="Logo" class="logo">
+            </div>
+        </nav>
+
+        <section class="logo info">
+            <img src="./img/logo3.png" alt="">
+            <div class="text-header">
+                <h1>Nuestros Voluntarios</h1>
+                <p>Enterate de todo lo que los voluntarios hacen por nuestros animales</p>
+            </div>
+        </section>
+    </header>
+
+    <main class="main-pages container">
+        <div class="general-accordion">
+            <button class="accordion paragraph">¿Qué tipo de tareas realiza un voluntario?</button>
+            <div class="panel paragraph">
+                <p>Los voluntarios son quienes nos ayudan a llevar a cabo distintas tareas en el refugio. Tenemos voluntarios dedicados a distintas áreas:
+                    <ul>
+                        <li><b>Especialistas:</b> médicos veteriniarios y aprendices quienes nos ayudan a llevar a cabo las tareas de rehabilitación cuando llega algun <i>Amigo de 4 Patas</i> herido.</li>
+                        <li><b>Administrativos:</b> profesionales en ciencias económicas que ofrecen sus servicios de manera gratuita para llevar a cabo el conteo de gastos del Refugio, como asi también tareas administrativas relacionadas a la organización de recursos y a los pedidos de adopción.</li>
+                        <li><b>Organizadores de eventos:</b> quienes nos ayudan a ultimar todos los detalles cuando se llevan a cabo colectas, eventos de adopción, ¡y mucho más!</li>
+                        <li><b>Limpieza y cuidado:</b> quienes nos ayudan a mantener el orden y limpieza de las distintas secciones en donde se encuentran ubicados nuestros animales.</li>
+                        <li><b>Rescatistas:</b> quienes se encargan de realizar la búsqueda de aquellos animales para los cuales recibimos algun pedido de ayuda</li>
+                        <li><b>Otros:</b>relacionados con el manejo de redes sociales, realización de entrevistas para adopciones, etc. </li>
+                    </ul>
+                </p>
+            </div>
+
+            <button class="accordion paragraph">¿Qué pasa si no cuento con ninguna profesión?</button>
+            <div class="panel paragraph">
+                <p>¡No te preocupes! No es necesario que tengas ninguna profesion para formar parte de nuestro equipo de voluntarios, solo necesitamos gente dispuesta a comprometerse con nuestra meta y nuestros animalitos.¡Hay una labor para todos!</p>
+            </div>
+
+            <button class="accordion paragraph">¿Sí o sí debo ser voluntario para poder ayudar?</button>
+            <div class="panel paragraph">
+                <p>Una característica distintiva de nuestro refugio es el sistema de “puertas abiertas”: cualquier persona puede visitar el refugio para brindar su amor a los animalitos o, si lo desea, formar parte del equipo de voluntarios de esta organización. De esta manera, se estimula a quienes se acercan a crear nexos con los animales y a involucrarse. El trabajo que queda por hacer es enorme, pero confiamos que entre todos podremos lograr que algún día los refugios no tengan que existir y cada animalito tenga un hogar feliz ¡Sumate vos también!</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="form_volunteer" class="container">
+        <h2 class="title-pages">¿Cómo puedo ser voluntario?</h2>
+        <div class="paragraph-info paragraph-pages">
+            <p class="paragraph">Completa el siguiente formulario con tus datos y uno de nosotros se va a contactar con vos!</p>
+        </div>
+
+        <form id="form_pages" class="form-general" action="">
+            <fieldset class="form-general">
+                <legend>Datos Personales</legend>
+                <div class="form-group" id="group_volunteer_name">
+                    <label for="volunteer_name" class="form-label">Nombre</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="volunteer_name" id="volunteer_name">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El nombre solo puede contener letras. Mínimo: 2 caracteres</p>
+                </div>
+
+                <div class="form-group" id="group_volunteer_surname">
+                    <label for="volunteer_surname" class="form-label">Apellido</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="volunteer_surname" id="volunteer_surname">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El apellido solo puede contener letras. Mínimo 2 caracteres</p>
+                </div>
+
+                <div class="form-group" id="group_volunteer_dni">
+                    <label for="volunteer_dni" class="form-label">DNI</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="volunteer_dni" id="volunteer_dni">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El DNI solo puede contener números. Mínimo: 7 / Máximo: 8</p>
+                </div>
+
+                <div class="form-group" id="group_volunteer_birthdate">
+                    <label for="volunteer_birthdate" class="form-label">Fecha de Nacimiento</label>
+                    <div class="form-group-input">
+                        <input type="date" class="form-input-pages" name="volunteer_birthdate" id="volunteer_birthdate">
+                    </div>
+                    <p class="form-input-error">Ingrese una fecha valida. Recuerde que para ser voluntario debe ser mayor de 21 años</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Contacto</legend>
+                <div class="form-group" id="group_volunteer_email">
+                    <label for="volunteer_email" class="form-label">E-mail</label>
+                    <div class="form-group-input">
+                        <input type="email" class="form-input-pages" name="volunteer_email" id="volunteer_email">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">Por favor ingrese un formato de correo válido (por ejemplo: correo@correo.com)</p>
+                </div>
+
+                <div class="form-group" id="group_volunteer_phone">
+                    <label for="volunteer_phone" class="form-label">Teléfono</label>
+                    <div class="form-group-input">
+                        <input type="tel" class="form-input-pages" name="volunteer_phone" id="volunteer_phone">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El Teléfono solo puede contener números.Minimo: 10 / Máximo: 20</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Domicilio</legend>
+                <div class="form-group" id="group_volunteer_street">
+                    <label for="volunteer_street" class="form-label">Calle</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="volunteer_street" id="volunteer_street">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">La Calle solo puede contener letras, numeros, puntos y guiones. Mínimo: 2 / Máximo: 30</p>
+                </div>
+
+                <div class="form-group" id="group_volunteer_st_number">
+                    <label for="volunteer_st-number" class="form-label">Numero</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="volunteer_st-number" id="volunteer_st-number">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">Ingrese números solamente</p>
+                </div>
+
+                <div class="form-group" id="group_volunteer_departament">
+                    <label for="volunteer_departament" class="form-label">Departamento</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="volunteer_departament" id="volunteer_departament">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">El Departamento solo puede contener letras y números. Mínimo: 1 / Máximo: 3</p>
+                </div>
+
+                <div class="form-group" id="group_volunteer_location">
+                    <label for="volunteer_location" class="form-label">Localidad</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="volunteer_location" id="volunteer_location">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">La Localidad solo puede contener letras y números</p>
+                </div>
+
+                <div class="form-group" id="group_volunteer_province">
+                    <label for="volunteer_province" class="form-label">Provincia</label>
+                    <div class="form-group-input">
+                        <input type="text" class="form-input-pages" name="volunteer_province" id="volunteer_province">
+                        <i class="form-validation fas fa-times-circle"></i>
+                    </div>
+                    <p class="form-input-error">La Provincia solo puede contener letras</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-general">
+                <legend>Queremos saber un poco más de vos...</legend>
+                <div class="form-group form-group-input-radio" id="group_volunteer_info">
+                    <div class="form-group-input">
+                        <label>¿Tenés o tuviste mascotas?</label>
+                        <label for="dog" class="form-label form-label-radio"><input type="radio" class="form-input-pages volunteer-info" name="q_have_pet" value="yes" checked>SI</label>
+                        <label for="cat" class="form-label form-label-radio"><input type="radio" class="form-input-pages volunteer-info" name="q_have_pet" value="no">NO</label>
+                    </div>
+                </div>
+
+                <div class="form-group-input form-group-input-radio" id="group_volunteer_info2">
+                    <div class="form-group-input">
+                        <label>¿Qué animal es/era?</label>
+                        <label for="dog" class="form-label form-label-radio"><input type="radio" class="form-input-pages volunteer-info" name="q_who_pet" value="dog" checked>Perro</label>
+                        <label for="cat" class="form-label form-label-radio"><input type="radio" class="form-input-pages volunteer-info" name="q_who_pet" value="cat">Gato</label>
+                    </div>
+                </div>
+
+                <div class="form-group-input form-group-input-radio" id="group_volunteer_info3">
+                    <div class="form-group-input">
+                        <label>¿Ejercés alguna profesión?</label>
+                        <label for="dog" class="form-label form-label-radio"><input type="radio" class="form-input-pages volunteer-info" name="q_profession" value="yes" checked>SI</label>
+                        <label for="cat" class="form-label form-label-radio"><input type="radio" class="form-input-pages volunteer-info" name="q_profession" value="no">NO</label>
+                    </div>
+                </div>     
+            </fieldset>
+            
+            <div class="form-error-msg" id="form_error_msg">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.</p>
+            </div>
+            
+            <div class="form-group-index index-btn">
+                <button type="submit" class="btn-send button-style">Enviar</button>
+                <p class="form-ok-msg" id="form_ok_msg">Gracias por contactarte con nosotros!</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+    <div class="svg-bottom" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 140" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: #735B74FF;"></path></svg></div>
+    
+    <footer>
+        <div class="social-media">
+            <h2 class="title">Social-Media</h2>
+            <p class="paragraph">Realmente no sabemos nada sobre el amor si no amamos a los animales. Vení a ser parte de nuestro mundo de cerca...</p>
+            <div class="items-social">
+                <a href="#"><img src="./img/social_whatsapp.png" alt=""></a>
+                <a href="#"><img src="./img/social_twitter.png" alt=""></a>
+                <a href="#"><img src="./img/social_facebook.png" alt=""></a>
+                <a href="#"><img src="./img/social_youtube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="https://www.flaticon.com/free-icons/dog" title="dog icons">// Dog, Marketing & Mammal icons created by Freepik - Flaticon </a>
+            <a href="https://www.flaticon.com/free-icons/pets" title="pets icons">// Pets icons created by photo3idea_studio - Flaticon //</a>
+            <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons"> Social Media icons created by Aldo Cervantes - Flaticon //</a>
+            <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons"> Hamburger icons created by feen - Flaticon //</a>
+        </div>
+    </footer>
+</body>
+
+</html>
